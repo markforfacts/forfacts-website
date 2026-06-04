@@ -1,0 +1,326 @@
+/* ═══════════════════════════════════════════════════════════
+   OVER ONS pagina — forfacts
+═══════════════════════════════════════════════════════════ */
+
+/* nav override voor lichte pagina */
+#nav.scrolled .nav-links--dark a { color: #000; }
+#nav.scrolled .nav-links--dark a:hover { color: var(--rose); }
+.nav-active { color: var(--rose) !important; font-weight: 700 !important; }
+
+/* ── HERO ───────────────────────────────────────────────── */
+.oo-hero {
+  position: relative;
+  min-height: 60vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-h) + 4rem) 4% 6rem;
+  overflow: hidden;
+}
+.oo-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+.oo-hero__title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  color: #fff;
+  line-height: 1.0;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.oo-hero__sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  font-weight: 400;
+}
+.oo-hero__bg { position: absolute; inset: 0; pointer-events: none; }
+.oo-hero__block {
+  position: absolute;
+  border-radius: 4px;
+}
+.oo-hero__block--rose {
+  width: 360px; height: 360px;
+  background: var(--rose);
+  top: -60px; right: -40px;
+  opacity: 0.2;
+  transform: rotate(-10deg);
+}
+.oo-hero__block--black {
+  width: 260px; height: 260px;
+  background: #1a1a1a;
+  top: 40px; right: 120px;
+  transform: rotate(-6deg);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.oo-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 0, transparent 50%),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 0, transparent 50%);
+  background-size: 28px 28px;
+}
+
+/* ── MISSIE ─────────────────────────────────────────────── */
+.oo-missie {
+  background: #fff;
+  padding: 8rem 4%;
+}
+.oo-missie__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+.oo-missie__title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.0;
+}
+.oo-missie__left p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.oo-waarden {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.oo-waarde {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateX(30px);
+}
+.oo-waarde__icon {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--rose);
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+.oo-waarde h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 0.3rem;
+}
+.oo-waarde p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #555;
+}
+
+/* ── MODEL ──────────────────────────────────────────────── */
+.oo-model {
+  background: #000;
+  color: #fff;
+  padding: 8rem 4%;
+}
+.oo-model__inner { max-width: 1100px; margin: 0 auto; }
+.oo-model__header { margin-bottom: 4rem; }
+.oo-model__header h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 1.05;
+}
+.oo-model__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.oo-model__pijler {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.oo-model__num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--rose);
+  margin-bottom: 1rem;
+}
+.oo-model__pijler h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+.oo-model__pijler p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── TEAM ───────────────────────────────────────────────── */
+.oo-team {
+  background: var(--bg-off);
+  padding: 8rem 4%;
+}
+.oo-team__header {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+.oo-team__header h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+.oo-team__sub {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+.oo-team__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* team kaart */
+.oo-team__member {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.oo-team__photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  /* De foto's hebben de logo-vorm al ingebakken,
+     maar we voegen subtiel hover-effect toe */
+  transition: transform 0.35s var(--ease-apple);
+}
+.oo-team__photo:hover {
+  transform: scale(1.03);
+}
+.oo-team__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  /* zwart-wit effect conform beeldtaal brandbook */
+  filter: grayscale(15%);
+  transition: filter 0.35s var(--ease-apple);
+}
+.oo-team__photo:hover img {
+  filter: grayscale(0%);
+}
+.oo-team__info {
+  padding: 1rem 0.25rem 0;
+}
+.oo-team__info h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 0.2rem;
+}
+.oo-team__role {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--rose);
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+}
+
+/* CTA kaart in grid */
+.oo-team__member--cta .oo-team__cta-inner {
+  background: #000;
+  border-radius: 12px;
+  height: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.oo-team__cta-hash {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rose);
+  letter-spacing: 0.05em;
+}
+.oo-team__member--cta h3 {
+  font-size: 1.35rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* ── QUOTE ──────────────────────────────────────────────── */
+.oo-quote {
+  background: var(--rose);
+  padding: 6rem 4%;
+  text-align: center;
+}
+.oo-quote__inner { max-width: 800px; margin: 0 auto; }
+.oo-quote__text {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.oo-quote__hash {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.05em;
+}
+
+/* ── CONTACT CTA ────────────────────────────────────────── */
+.oo-contact-cta {
+  background: #fff;
+  padding: 8rem 4%;
+  text-align: center;
+}
+.oo-contact-cta__inner { max-width: 600px; margin: 0 auto; }
+.oo-contact-cta h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+}
+.oo-contact-cta p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .oo-model__grid { grid-template-columns: repeat(2, 1fr); }
+  .oo-team__grid  { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .oo-missie__inner { grid-template-columns: 1fr; gap: 3rem; }
+  .oo-model__grid   { grid-template-columns: repeat(2, 1fr); }
+  .oo-team__grid    { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .oo-model__grid { grid-template-columns: 1fr; }
+  .oo-team__grid  { grid-template-columns: repeat(2, 1fr); }
+  .oo-team__member--cta { grid-column: span 2; }
+}
