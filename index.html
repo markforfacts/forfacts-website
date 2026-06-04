@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>forfacts — make simplicity work</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">
+      <svg width="72" height="40" viewBox="0 0 72 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="56" height="32" rx="2" fill="#000"/>
+        <text x="6" y="22" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff">for</text>
+        <text x="6" y="35" font-family="sans-serif" font-size="13" font-weight="900" fill="#e6007e">facts</text>
+        <polygon points="56,0 72,0 72,16" fill="#000"/>
+      </svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#diensten">diensten</a></li>
+      <li><a href="#filosofie">aanpak</a></li>
+      <li><a href="#cases">cases</a></li>
+      <li><a href="#over">over ons</a></li>
+      <li><a href="#contact" class="nav-cta">plan een afspraak</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-block hero-block--rose"></div>
+    <div class="hero-block hero-block--black"></div>
+    <div class="hero-content">
+      <p class="hero-label" id="heroLabel">make simplicity work</p>
+      <h1 class="hero-headline" id="heroHeadline">
+        <span class="word">wij</span>
+        <span class="word">vereenvoudigen</span>
+        <span class="word">jouw</span>
+        <span class="word accent">werk</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">Mensgericht en datagedreven — efficiënte &amp; simpele oplossingen met impact</p>
+      <div class="hero-ctas" id="heroCtas">
+        <a href="#contact" class="btn btn--primary">plan een afspraak</a>
+        <a href="#diensten" class="btn btn--ghost">onze diensten</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="heroScroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ STATEMENT -->
+  <section id="statement">
+    <div class="statement-inner">
+      <div class="statement-quote reveal-text">
+        <span class="sq-line sq-line--rose">feiten zorgen voor eenvoud</span>
+        <span class="sq-line sq-line--black">geen onderbuikgevoel bij forfacts</span>
+      </div>
+      <p class="statement-body">
+        Emoties en onderbuikgevoelens bepalen dagelijks welke keuzes worden gemaakt op de werkvloer.
+        De complexiteit groeit en we vragen onszelf af wat het nut is van onze dagelijkse bezigheden.
+        Feiten zorgen voor eenvoud. Daarom zijn wij Forfacts.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FILOSOFIE (sticky scroll) -->
+  <section id="filosofie">
+    <div class="filosofie-sticky">
+      <div class="filosofie-left">
+        <p class="section-label">het forfacts model</p>
+        <h2 class="filosofie-title">vier<br/>pijlers.<br/>één<br/>aanpak.</h2>
+        <div class="filosofie-progress">
+          <div class="progress-bar" id="filosProgress"></div>
+        </div>
+      </div>
+      <div class="filosofie-right" id="filosRight">
+        <div class="pijler" data-index="0">
+          <span class="pijler-num">01</span>
+          <h3 class="pijler-title">mens</h3>
+          <p class="pijler-desc">De eindgebruiker is de sleutel tot succes. Wij zetten mensen centraal in elk vraagstuk — want de beste oplossing is er een die gedragen wordt.</p>
+          <div class="pijler-tags"><span>change management</span><span>teambuilding</span><span>gedrag</span></div>
+        </div>
+        <div class="pijler" data-index="1">
+          <span class="pijler-num">02</span>
+          <h3 class="pijler-title">proces</h3>
+          <p class="pijler-desc">Efficiëntie door automatisering en LEAN-methodologie. Wij brengen structuur aan waar chaos regeert en vereenvoudigen wat onnodig complex is.</p>
+          <div class="pijler-tags"><span>LEAN</span><span>Agile/SAFe</span><span>Power Apps</span></div>
+        </div>
+        <div class="pijler" data-index="2">
+          <span class="pijler-num">03</span>
+          <h3 class="pijler-title">systeem</h3>
+          <p class="pijler-desc">Data toegankelijk maken en systemen laten samenwerken. Van ETL-pipelines tot Microsoft Fabric — wij zorgen dat uw data werkt.</p>
+          <div class="pijler-tags"><span>Microsoft Fabric</span><span>SQL</span><span>Python</span><span>ETL</span></div>
+        </div>
+        <div class="pijler" data-index="3">
+          <span class="pijler-num">04</span>
+          <h3 class="pijler-title">informatie</h3>
+          <p class="pijler-desc">Informatie is de brandstof voor besluitvorming. Wij vertalen ruwe data naar heldere inzichten die leiden tot betere, snellere beslissingen.</p>
+          <div class="pijler-tags"><span>PowerBI</span><span>dashboards</span><span>KPI</span><span>rapportage</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ DIENSTEN -->
+  <section id="diensten">
+    <div class="section-header">
+      <p class="section-label">wat wij doen</p>
+      <h2 class="section-title">vier kennisdomeinen.<br/>één doel: eenvoud.</h2>
+    </div>
+    <div class="diensten-grid">
+      <div class="dienst-card" data-delay="0">
+        <div class="dienst-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#e6007e" stroke-width="2"/><path d="M16 24h16M24 16v16" stroke="#e6007e" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="dienst-card__title">data-ontsluiting</h3>
+        <p class="dienst-card__desc">Van ruwe data naar bruikbare informatie. Wij bouwen robuuste datapipelines en zorgen dat uw data altijd beschikbaar en betrouwbaar is.</p>
+        <div class="dienst-card__tags"><span>Dataflow</span><span>ETL</span><span>Microsoft Fabric</span><span>SQL</span><span>Python</span></div>
+        <a href="#contact" class="dienst-card__link">meer informatie <span>→</span></a>
+      </div>
+      <div class="dienst-card" data-delay="1">
+        <div class="dienst-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="#e6007e" stroke-width="2"/><path d="M16 32l6-8 6 6 4-6" stroke="#e6007e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="dienst-card__title">informatiemanagement</h3>
+        <p class="dienst-card__desc">Datagedreven werken als cultuur. Van visualisatie tot performance management — wij helpen organisaties sturen op feiten.</p>
+        <div class="dienst-card__tags"><span>PowerBI</span><span>visualisatie</span><span>KPI</span><span>performance</span></div>
+        <a href="#contact" class="dienst-card__link">meer informatie <span>→</span></a>
+      </div>
+      <div class="dienst-card" data-delay="2">
+        <div class="dienst-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="6" stroke="#e6007e" stroke-width="2"/><circle cx="12" cy="34" r="5" stroke="#e6007e" stroke-width="2"/><circle cx="36" cy="34" r="5" stroke="#e6007e" stroke-width="2"/><path d="M19 21l-4 8M29 21l4 8M20 34h8" stroke="#e6007e" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="dienst-card__title">mens &amp; gedrag</h3>
+        <p class="dienst-card__desc">Verandering begint bij mensen. Wij begeleiden organisaties in gedragsverandering, projectmanagement en strategie-naar-KPI trajecten.</p>
+        <div class="dienst-card__tags"><span>projectmanagement</span><span>teambuilding</span><span>change</span><span>strategie</span></div>
+        <a href="#contact" class="dienst-card__link">meer informatie <span>→</span></a>
+      </div>
+      <div class="dienst-card" data-delay="3">
+        <div class="dienst-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M10 38V20l14-10 14 10v18" stroke="#e6007e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="10" rx="1" stroke="#e6007e" stroke-width="2"/></svg>
+        </div>
+        <h3 class="dienst-card__title">procesoptimalisatie</h3>
+        <p class="dienst-card__desc">Agile, LEAN en automatisering als gereedschap. Wij vereenvoudigen processen zodat uw organisatie wendbaarder en efficiënter wordt.</p>
+        <div class="dienst-card__tags"><span>Agile/SAFe</span><span>LEAN</span><span>Power Apps</span><span>Data Governance</span></div>
+        <a href="#contact" class="dienst-card__link">meer informatie <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ QUOTE BAND -->
+  <section id="quote-band">
+    <div class="quote-band-inner">
+      <div class="qb-card qb-card--white">
+        <p class="qb-text">knowledge is a process of piling up facts, wisdom lies in their simplification</p>
+        <span class="qb-hash">#weareforfacts</span>
+      </div>
+      <div class="qb-card qb-card--rose">
+        <p class="qb-text">facts don't cease to exist because they are ignored</p>
+        <span class="qb-hash">#weareforfacts</span>
+      </div>
+      <div class="qb-card qb-card--black">
+        <p class="qb-text">for every fact there is an infinity of hypotheses</p>
+        <span class="qb-hash">#weareforfacts</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CASES -->
+  <section id="cases">
+    <div class="section-header">
+      <p class="section-label">onze cases</p>
+      <h2 class="section-title">resultaten die<br/>er toe doen</h2>
+    </div>
+    <div class="cases-track-wrap">
+      <div class="cases-track" id="casesTrack">
+        <div class="case-card">
+          <div class="case-card__img case-card__img--1">
+            <div class="case-img-overlay"></div>
+            <span class="case-sector">energie</span>
+          </div>
+          <div class="case-card__body">
+            <h3>helderheid in de energietransitie</h3>
+            <p>Engineering-projecten inzichtelijk gemaakt voor een grote speler in de energiesector. Van chaos naar overzicht.</p>
+            <a href="#contact" class="case-link">bekijk case →</a>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card__img case-card__img--2">
+            <div class="case-img-overlay"></div>
+            <span class="case-sector">finance &amp; data</span>
+          </div>
+          <div class="case-card__body">
+            <h3>microsoft fabric naar powerbi dashboard</h3>
+            <p>Van ruwe databronnen naar een live management-dashboard dat dagelijks besluitvorming ondersteunt.</p>
+            <a href="#contact" class="case-link">bekijk case →</a>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card__img case-card__img--3">
+            <div class="case-img-overlay"></div>
+            <span class="case-sector">zorg</span>
+          </div>
+          <div class="case-card__body">
+            <h3>datagedreven cultuur in de zorg</h3>
+            <p>Workshop-traject dat een zorginstellingen hielp om data als fundament te gebruiken voor betere patiëntenzorg.</p>
+            <a href="#contact" class="case-link">bekijk case →</a>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card__img case-card__img--4">
+            <div class="case-img-overlay"></div>
+            <span class="case-sector">consultancy</span>
+          </div>
+          <div class="case-card__body">
+            <h3>bi consultant bij hoscono</h3>
+            <p>PowerBI en Data Governance geïmplementeerd voor een groeiend consultancybedrijf dat schaalt op data.</p>
+            <a href="#contact" class="case-link">bekijk case →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cases-nav">
+      <button class="cases-nav-btn" id="casesPrev">←</button>
+      <button class="cases-nav-btn" id="casesNext">→</button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ KLANTEN MARQUEE -->
+  <section id="klanten">
+    <p class="section-label" style="text-align:center; margin-bottom: 2rem;">zij gingen ons voor</p>
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>VW Telecom</span>
+        <span>PGGM</span>
+        <span>UMCU</span>
+        <span>Stedin</span>
+        <span>OranjeNassau</span>
+        <span>G-AAN</span>
+        <span>Frilim B.V.</span>
+        <span>OrangeOnly</span>
+        <span>VW Telecom</span>
+        <span>PGGM</span>
+        <span>UMCU</span>
+        <span>Stedin</span>
+        <span>OranjeNassau</span>
+        <span>G-AAN</span>
+        <span>Frilim B.V.</span>
+        <span>OrangeOnly</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="testimonials-inner">
+      <p class="section-label">wat klanten zeggen</p>
+      <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial active">
+          <blockquote>"De workshop gaf ons eindelijk helderheid over wat datagedreven werken voor ons betekent. Forfacts wist onze organisatie te raken op precies de juiste manier."</blockquote>
+          <cite>— OrangeOnly</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>"Wat ons opviel was de diepgaande kennis van de zorgsector. Forfacts sprak onze taal en bracht structuur waar we die het hardst nodig hadden."</blockquote>
+          <cite>— G-AAN, gezondheidszorg</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>"Na de overname hadden we dringend behoefte aan professionalisering van onze systemen. Forfacts leverde precies wat we nodig hadden, snel en effectief."</blockquote>
+          <cite>— Frilim B.V.</cite>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots">
+        <button class="dot active" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ OVER ONS -->
+  <section id="over">
+    <div class="over-inner">
+      <div class="over-visual">
+        <div class="over-block over-block--rose"></div>
+        <div class="over-block over-block--black"></div>
+        <div class="over-grid"></div>
+        <div class="over-text-overlay">
+          <span class="oto-big">1</span>
+          <span class="oto-label">doel:<br/>eenvoud</span>
+        </div>
+      </div>
+      <div class="over-content">
+        <p class="section-label">over forfacts</p>
+        <h2 class="over-title reveal-words">
+          <span class="word">een</span>
+          <span class="word">creatieve</span>
+          <span class="word">geest</span>
+          <span class="word accent">en</span>
+          <span class="word">continue</span>
+          <span class="word">verwondering</span>
+        </h2>
+        <p>Wij geven mensen de ruimte en het vertrouwen om doelen te realiseren, met beperkte kaders. Een overvloed aan plannen, regels en bureaucratie werkt averechts. Met feiten als fundament helpen wij organisaties vooruit.</p>
+        <p>Gevestigd in Utrecht. Actief door heel Nederland.</p>
+        <div class="over-stats">
+          <div class="stat"><span class="stat-num">9+</span><span class="stat-label">open vacatures</span></div>
+          <div class="stat"><span class="stat-num">18+</span><span class="stat-label">klanten</span></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">kennisdomeinen</span></div>
+        </div>
+        <a href="#contact" class="btn btn--primary">werken bij forfacts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-label" style="color: #c8c8c8">neem contact op</p>
+        <h2 class="contact-title">laten we<br/>kennismaken</h2>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="cd-label">adres</span>
+            <span>'De nieuwe stad', Europalaan 93<br/>3526 KP Utrecht</span>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">telefoon</span>
+            <a href="tel:0854012453">085 4012 453</a>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-label">e-mail</span>
+            <a href="mailto:info@forfacts.nl">info@forfacts.nl</a>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://wa.me/31615275918" class="social-link" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">voornaam</label>
+              <input type="text" id="firstName" name="firstName" placeholder="voornaam" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">achternaam</label>
+              <input type="text" id="lastName" name="lastName" placeholder="achternaam" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">e-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="jouw@email.nl" required />
+          </div>
+          <div class="form-group">
+            <label for="message">bericht</label>
+            <textarea id="message" name="message" rows="5" placeholder="vertel ons meer over jouw vraagstuk..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--rose btn--full">verstuur bericht</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="80" height="44" viewBox="0 0 80 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="62" height="36" rx="2" fill="#fff"/>
+          <text x="7" y="24" font-family="sans-serif" font-size="14" font-weight="900" fill="#000">for</text>
+          <text x="7" y="38" font-family="sans-serif" font-size="14" font-weight="900" fill="#e6007e">facts</text>
+          <polygon points="62,0 80,0 80,18" fill="#fff"/>
+        </svg>
+        <p class="footer-tagline">make simplicity work</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#diensten">diensten</a>
+        <a href="#filosofie">aanpak</a>
+        <a href="#cases">cases</a>
+        <a href="#over">over ons</a>
+        <a href="#contact">contact</a>
+        <a href="#" class="footer-link-sub">kennisbank</a>
+        <a href="#" class="footer-link-sub">werken bij</a>
+        <a href="#" class="footer-link-sub">algemene voorwaarden</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Forfacts B.V. — Utrecht</span>
+      <span>KvK-nummer beschikbaar op aanvraag</span>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
